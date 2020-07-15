@@ -1,4 +1,5 @@
 package test
+import java.util.Date
 
 data class Category(
   var name : String?,
@@ -8,7 +9,7 @@ data class Category(
 data class Models(
   var mfrModel : String?,
   var stockModel : String?,
-  var obsoleteModels : Array<String>?
+  var obsoleteModels : MutableList<String>?
 )
 
 data class Specifications(
@@ -62,8 +63,8 @@ data class PricingData(
 )
 
 data class GTINData(
-  var each : Array<String>?,
-  var innerPacks : Array<String>?,
-  var outerPacks : Array<String>?
+  var each : MutableList<String>?,
+  var innerPacks : MutableList<String>?,
+  var outerPacks : MutableList<String>?
 )
 
