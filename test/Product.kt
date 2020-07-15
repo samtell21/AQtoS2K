@@ -1,8 +1,8 @@
 package test
 
 data class Product(
-  var productId : UUID?,
-  var mfrId : UUID?,
+  val productId : UUID?,
+  val mfrId : UUID?,
   var models : Models?,
   var specifications : Specifications?,
   var productCategory : Category?,

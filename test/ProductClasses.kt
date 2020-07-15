@@ -3,7 +3,7 @@ import java.util.Date
 
 data class Category(
   var name : String?,
-  var categoryId : UUID?
+  val categoryId : UUID?
 )
 
 data class Models(
@@ -19,9 +19,9 @@ data class Specifications(
 )
 
 data class ProductProperty(
-  var propertyId : UUID?,
+  val propertyId : UUID?,
   var property : String?,
-  var valueId : UUID?,
+  val valueId : UUID?,
   var value : String?
 )
 
